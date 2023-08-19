@@ -1,6 +1,8 @@
+
+
 #include<stdio.h>
 int main(){
-    int a[40],pos,num,i,n;
+    int a[40],j,k,i,n;
     printf("enter the array size");
     scanf("%d",&n);
     printf("enter the array elements ");
@@ -9,21 +11,18 @@ int main(){
         scanf("%d",&a[i]);
     }
 
-
-    printf("enter the position of element to be inserted");
-    scanf("%d",&pos);
-
-    printf("enter the element to be inserted");
-    scanf("%d",&num);
-        n++;
-    for(i=n-1;i>=pos-1;i--){
-        a[i+1]=a[i];
+    for(i=0;i<n;i++){
+        for(j=i+1;j<n;j++){
+            if(a[i]==a[j]){
+                for(k=j;k<n;k++){
+                    a[k]=a[k+1];
+                    printf("%d",a[5]);
+                }
+                n--;j--;
+            }
         }
-        a[pos-1]=num;
-        
-        
-    
-    
+    }
+
     printf("the array elements are:");
     for(i=0;i<n;i++){
         printf("%d \t",a[i]);
