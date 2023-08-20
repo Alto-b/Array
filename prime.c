@@ -20,7 +20,8 @@ int main() {
         } else {
             for (j = 2; j * j <= a[i]; j++) {
                 if (a[i] % j == 0) {
-                    flag = 0; // Found a divisor, so it's not prime
+                  
+              flag = 0; // Found a divisor, so it's not prime
                     break;
                 }
             }

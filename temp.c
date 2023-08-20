@@ -1,38 +1,24 @@
-#include <stdio.h>
-
-int main() {
-    int a[100], j, i, n, sum = 0,flag;
+#include<stdio.h>
+int main(){
+    int i,j,n,a[100],temp;
+    printf("enter the array size");
+    scanf("%d",&n);
+    printf("enter the array elements ");
     
-    printf("Enter the size of the array: ");
-    scanf("%d", &n);
-
-    printf("Enter the array elements: ");
-    for (i = 0; i < n; i++) {
-        scanf("%d", &a[i]);
+    for(i=0;i<n;i++){
+        scanf("%d",&a[i]);
     }
 
-    printf("Prime numbers in the array: ");
-    for (i = 0; i < n; i++) {
-         flag = 1; // Assume the number is prime initially
-        
-        if (a[i] <= 1) {
-            flag = 0; // 0 and 1 are not prime
-        } else {
-            for (j = 2; j * j <= a[i]; j++) {
-                if (a[i] % j == 0) {
-                    flag = 0; // Found a divisor, so it's not prime
-                    break;
-                }
-            }
-        }
-        
-        if (flag) {
-            printf("%d ", a[i]);
-            sum += a[i];
-        }
+    printf("the reversed array elements are:");
+    for(i=(n/2),j=n-1;i<(n/4);i++,j--){
+        temp=a[i];
+        a[i]=a[j];
+        a[j]=temp;
     }
-    
-    printf("\nSum of prime numbers: %d\n", sum);
+    printf("the reversed array elements are:");
+    for(i=0;i<n;i++){
+        printf("%d\t",a[i]);
+    }
 
-    return 0;
-}
+
+} 
