@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main(){
+    int i,n,j,c=0,a[100],avg=0,sum=0;
+    printf("enter the array size");
+    scanf("%d",&n);
+    printf("enter the array elements ");
+    
+    for(i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+    printf("prime numbers are :\n");
+    for(i=0;i<=n;i++){
+        c=0;
+        for(j=1;j<=a[i];j++){
+            if(a[i]%j==0){
+                c++;
+                sum=sum+a[i];
+            }
+        }
+        avg=sum/n;
+        if(c==2)
+            printf("%d\t",a[i]);
+            printf("\n average:",avg);
+        }
+
+}

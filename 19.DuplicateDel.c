@@ -21,6 +21,6 @@ int main() {
     printf("the array after deleting duplicate elements :\n");
     for (i=0;i<newsize;i++){
         printf("%d\n",a[i]);
-
+ 
     }
 }
