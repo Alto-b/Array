@@ -24,5 +24,20 @@ int main()
         if (c>1)
             printf("\n %d repeated %d times", a[i], c);
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 }
