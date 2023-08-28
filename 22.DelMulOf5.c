@@ -3,7 +3,7 @@
 
 int main()
 {
-    int a[100],i,j,c,m,n;
+    int a[100],i,j,c,n;
     printf("enter the size");
     scanf("%d",&n);
     printf("Enter the elements");

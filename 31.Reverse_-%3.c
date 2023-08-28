@@ -16,7 +16,7 @@ int main(){
         a[j]=temp;
         
     }
-    //delete multiples of 5
+    //delete multiples of 3
     for(i=0;i<n;i++){
         if(a[i]%3!=0){
             a[new]=a[i];
