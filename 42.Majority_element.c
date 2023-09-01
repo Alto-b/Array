@@ -24,7 +24,7 @@ int main() {
         
     }
     if(found==0){
-        printf("no");
+        printf("not found");
     }
     }
     
